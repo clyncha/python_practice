@@ -22,7 +22,7 @@ replace_string("He  o", "l")
 # Given a positive integer num, write a function that returns True if num is a perfect square else False.
 
 
-def validSquare(number):
+def valid_square(number):
     # turns square of number into int
     square = int(number**0.5)
     # square the int (number rounds down to 0)
@@ -30,17 +30,17 @@ def validSquare(number):
     return square**2 == number
 
 
-validSquare(10)
+valid_square(10)
 # False
-validSquare(36)
+valid_square(36)
 # True
-validSquare(4.0)
+valid_square(4.0)
 # False
 
 # Given an integer n, return the number of trailing zeroes in n factorial n!
 
 
-def numTralingZeros(n):
+def count_trailing_zeros(n):
     # factorial ex: 5 * 4 * 3 * 2 * 1
     fact = n
     while n > 1:
@@ -59,7 +59,7 @@ def numTralingZeros(n):
     return result
 
 
-numTralingZeros(10)
+count_trailing_zeros(10)
 # 2
-numTralingZeros(18)
+count_trailing_zeros(18)
 # 3
